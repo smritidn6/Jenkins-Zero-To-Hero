@@ -39,3 +39,4 @@ jobs:
           propertyPath: 'deploy.spec.template.spec.containers.image'
           value: smritidn6docker/python-todo-app:v2
           commitChange: false
+          updateFile: true
