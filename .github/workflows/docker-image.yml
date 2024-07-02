@@ -25,7 +25,7 @@ jobs:
         run: |
          cd python-jenkins-argocd-k8s
          docker build -t python-todo-app:v1 .
-         docker tag python-todo-app:v1 smritidn6docker/python-todo-app:v1
+         docker tag python-todo-app:v1 smritidn6docker/python-todo-app:v2
 
       - name: Push the image to dokerhub
         run: |
