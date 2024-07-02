@@ -29,7 +29,8 @@ jobs:
 
       - name: Push the image to dokerhub
         run: |
-         docker login --username smritidn6docker --password ${{ secrets.DOCKER_PASSWORD }}
+         echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username "${DOCKERHUB_USERNAME}" --password-stdin
+         #docker login --username smritidn6docker --password ${{ secrets.DOCKER_PASSWORD }}
          docker push smritidn6docker/python-todo-app:v2
 
       - name: Update deploy.yaml
