@@ -36,7 +36,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'python-jenkins-argocd-k8s/deploy/deploy.yaml'
-          propertyPath: 'deploy.spec.template.spec.containers.image'
+          propertyPath: 'spec.template.spec.containers.image'
           value: smritidn6docker/python-todo-app:v2
           commitChange: false
           updateFile: true
