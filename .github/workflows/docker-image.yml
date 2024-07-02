@@ -34,7 +34,7 @@ jobs:
          docker push smritidn6docker/python-todo-app:v2
 
       - name: Update deploy.yaml
-        uses: fjogeleit/yaml-update-action@main
+        uses: OpsVerseIO/image-updater-action@0.1.0
         with:
           valueFile: 'python-jenkins-argocd-k8s/deploy/deploy.yaml'
           propertyPath: 'spec.template.spec.containers.image'
