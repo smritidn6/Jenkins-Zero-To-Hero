@@ -9,4 +9,4 @@ spec:
     name: nginx
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 2
+  targetCPUUtilizationPercentage: 0.01
